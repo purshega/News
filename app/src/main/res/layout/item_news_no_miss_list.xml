@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="0dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="@dimen/activity_margin"
+                android:layout_height="@dimen/activity_margin"
+                android:layout_gravity="center"
+                android:theme="@style/CircularProgress"/>
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                tools:src="@color/background"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            tools:text="ДТЭК вошол в ТОП-10 лучших работодателей Украины"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/color_text_date"
+            tools:text="2009 | EN"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_desc"-->
+        <!--style="@style/TextAppearance.AppCompat.Caption"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/activity_margin_content"-->
+        <!--android:layout_marginStart="@dimen/activity_margin_content"-->
+        <!--android:layout_marginTop="@dimen/activity_margin_half"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLines="2"-->
+        <!--tools:text="Nowadays, user engagement is considered one of the most important metrics for the success of your app"/>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark">
+    </FrameLayout>
+</LinearLayout>

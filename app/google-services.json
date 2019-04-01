@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "944766060703",
+    "firebase_url": "https://dtek-portal.firebaseio.com",
+    "project_id": "dtek-portal",
+    "storage_bucket": "dtek-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944766060703:android:5b9e837100f994b0",
+        "android_client_info": {
+          "package_name": "com.app.push.fcmtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944766060703-e0cmfno93v66d5slb7e80u35l5rodg25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCknlw0Sa22tDkAfv8h_hjVNMxfgy6yJCw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944766060703:android:64d8d8ea6c104f45",
+        "android_client_info": {
+          "package_name": "com.dtek.portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944766060703-e0cmfno93v66d5slb7e80u35l5rodg25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCknlw0Sa22tDkAfv8h_hjVNMxfgy6yJCw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

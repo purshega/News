@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_news"
+        android:title="@string/title_news">
+        <menu>
+            <group
+                android:id="@+id/news_group"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_news_dtek"
+                    android:icon="@drawable/ic_nav_news_dtek"
+                    android:title="@string/title_news_dtek" />
+                <item
+                    android:id="@+id/nav_not_miss"
+                    android:icon="@drawable/ic_nav_not_miss"
+                    android:title="@string/title_not_miss" />
+                <item
+                    android:id="@+id/nav_news_company"
+                    android:icon="@drawable/ic_nav_news_company"
+                    android:title="@string/title_news_company" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_service"
+        android:title="@string/title_service">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_car"
+                    android:icon="@drawable/ic_nav_car"
+                    android:title="@string/title_car"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_it_service"
+                    android:icon="@drawable/ic_nav_it"
+                    android:title="@string/title_it_service"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_room_service"
+                    android:icon="@drawable/ic_nav_room"
+                    android:title="@string/title_room_service"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_hr_vacation"
+                    android:icon="@drawable/ic_nav_vacation"
+                    android:title="@string/title_hr_vacation"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_qr"
+                    android:icon="@drawable/ic_qr_code"
+                    android:title="@string/title_qr"
+                    android:visible="false" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_media"
+        android:title="@string/title_media">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_photo"
+                    android:icon="@drawable/ic_nav_gallery"
+                    android:title="@string/title_photo"
+                    android:visible="true"/>
+                <item
+                    android:id="@+id/nav_newspaper"
+                    android:icon="@drawable/ic_newspaper"
+                    android:title="@string/title_newspaper"
+                    android:visible="false"/>
+                <item
+                    android:id="@+id/nav_video"
+                    android:icon="@drawable/ic_nav_gallery"
+                    android:title="@string/title_video"
+                    android:visible="false"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/title_menu_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/title_comm_service"
+                android:visible="false"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,4 @@
+#Fri Mar 29 11:46:04 EET 2019
+base.0=C\:\\Dev\\Android\\DTEK\\Portal\\News\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,348 @@
+<resources>
+    <string name="app_name">ДТЭК Портал</string>
+    <string name="app_version">v%1$s</string>
+    <!--<string name="app_copyright">© DTEK</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="text_title_exit">Выход</string>
+    <string name="text_title_lock_screen">Блокировка экрана</string>
+    <string name="text_message_lock_screen">Для использование приложение необходимо активировать блокировку экрана (пин-код, графический ключ, отпечаток)</string>
+    <string name="text_btn_lock_screen">Установить</string>
+
+    <!-- Логин -->
+    <string name="text_dialog_login">Введите логин</string>
+    <string name="text_hint_login">Логин</string>
+    <string name="text_dialog_sms">Введите код доступа</string>
+    <string name="text_hint_sms">Код доступа</string>
+    <string name="btn_sms">Запросить код доступа</string>
+    <string name="btn_enter">Вход</string>
+    <string name="text_sms_code">Sms-код поступает только на корпоративный номер\nРекомендуем ознакомиться с частыми вопросами в правом верхнем углу</string>
+    <string name="text_menu_help">FAQ</string>
+
+    <!-- Общие меню -->
+    <string name="title_news">НОВОСТИ</string>
+    <string name="title_news_dtek">Новости ДТЭК</string>
+    <string name="title_not_miss">Не пропустите</string>
+    <string name="title_news_company">Новости предприятий</string>
+    <string name="title_service">СЕРВИСЫ</string>
+    <string name="title_car">Заказ автомобилей</string>
+    <string name="title_business_trip">Управление командировками</string>
+    <string name="title_references">Заказ справок</string>
+    <string name="title_it_service">Заявки на ИТ-услуги</string>
+    <string name="title_room_service">Обслуживание помещений</string>
+    <string name="title_hr_vacation">Заявления на отпуск</string>
+    <string name="title_qr">Сканировние QR</string>
+    <string name="title_media">МЕДИА</string>
+    <string name="title_photo">Фотогалерея</string>
+    <string name="title_video">Видео</string>
+    <string name="title_newspaper">Наша газета</string>
+    <string name="title_ukr">Українською</string>
+    <string name="language_ukr">Украинский</string>
+    <string name="title_rus">На русском</string>
+    <string name="language_rus">Русский</string>
+    <string name="title_menu_communicate">КОМУНИКАЦИЯ</string>
+    <string name="title_comm_service">Обратная связь</string>
+    <string name="address_email">Developers@dtek.com</string>
+    <string name="choose_client">Выберите почтовую программу</string>
+
+    <!--Новости-->
+    <string name="error_msg">Не удалось получить новости.</string>
+    <string name="btn_retry">Повторить</string>
+    <string name="error_msg_no_internet">Нет подключения к Интернету</string>
+    <string name="error_msg_timeout">Сервер слишком долго реагировал</string>
+    <string name="error_msg_unknown">Произошла непредвиденная ошибка</string>
+    <string name="tap_to_reload">Нажмите, чтобы перезагрузить</string>
+    <string name="dialog_wait">Пожалуйста, подождите…</string>
+    <string name="text_hint_auth"><u>Для просмотра комментариев, пожалуйста, авторизуйтесь</u></string>
+    <string name="text_hint_comments">Введите коментарий</string>
+    <string name="txt_empty_list">Список пустой</string>
+
+    <!--Tabs сервисов RUS-->
+    <string name="tab_title_all">Все</string>
+    <string name="tab_title_active">Активные</string>
+    <string name="tab_title_archive">Архив</string>
+    <string name="tab_title_draft">Черновики</string>
+    <string name="tab_title_new">Новые</string>
+    <string name="tab_title_in_work">В работе</string>
+    <string name="tab_title_postpone">Отложенные</string>
+
+    <!--Tabs сервисов UKR-->
+    <string name="tab_title_all_ukr">Всі</string>
+    <string name="tab_title_active_ukr">Активні</string>
+    <string name="tab_title_archive_ukr">Архів</string>
+
+    <!--Заказ Авто-->
+    <!--<string name="text_hint_initiator">Инициатор заявки</string>-->
+    <string name="text_status">Статус</string>
+    <string name="text_data_create">Дата создания</string>
+    <string name="text_create_order">Общая информация</string>
+    <string name="text_hint_city">Город заказа</string>
+    <string name="text_hint_phone">Контактный телефон</string>
+    <string name="text_hint_distance">Направление</string>
+    <string name="text_transport_for">Транспорт предоставить для:</string>
+    <string name="text_initiator">Инициатор заявки</string>
+    <string name="text_number_passenger">Общее количество пассажиров</string>
+    <string name="text_other_pass">Другие пассажиры</string>
+    <string name="btn_add_passenger">+ Добавить пассажиров</string>
+    <string name="text_route">Маршрут</string>
+    <string name="text_hint_point_start">Пункт отправления</string>
+    <string name="text_hint_date_time_start">Дата и время отправления</string>
+    <string name="text_hint_date">Дата</string>
+    <string name="text_hint_time">Время</string>
+    <string name="text_hint_time_ukr">Час</string>
+    <string name="date_picker_title">Дата:</string>
+    <string name="time_picker_title">Время:</string>
+    <string name="btn_add_point">+ Добавить промежуточный пункт</string>
+    <string name="text_hint_point_end">Пункт назначения</string>
+    <string name="text_hint_date_time_end">Дата и время прибытия</string>
+    <string name="text_notes">Примечания</string>
+    <string name="text_hint_comment">Введите примечания</string>
+    <string name="btn_confirm">Отправить</string>
+    <string name="btn_draft">Сохранить черновик</string>
+    <string name="btn_cancel">Отменить заявку</string>
+    <string name="btn_rating">Оценить</string>
+    <string name="btn_archive_ukr">Архів</string>
+    <string name="btn_archive_rus">Архив</string>
+    <string name="text_passenger">Пассажир:</string>
+    <string name="text_hint_fio_passenger">ФИО</string>
+    <string name="text_hint_comment_passenger">Комментарии</string>
+    <string name="text_cb_send_sms">Отправить sms</string>
+    <string name="text_hint_number_sms">Номер для отправки SMS</string>
+    <string name="text_hint_name_point">Промежуточный пункт</string>
+    <string name="text_cb_expect">Ожидать</string>
+    <string name="text_cb_take_away">Забрать в</string>
+    <string name="text_time_expect">Время ожидания</string>
+    <string name="order_car_massage_sent">Ваша заявка отправлена в черновики</string>
+    <string name="text_error_city">Не не заполнено обязательное поле \"Город заказа\"</string>
+    <string name="text_error_direction">Не не заполнено обязательное поле \"Направление\"</string>
+    <string name="text_error_phone_null">Нео заполнено обязательное поле \"Контактный телефон\"</string>
+    <string name="text_error_phone_format">Необходимо ввести корректный номер телефона(+38XXXXXXXXXX)</string>
+    <string name="text_error_phone_passenger">Не заполнено обязательное поле пассажира \"Номер для отправки sms\"</string>
+    <string name="text_error_passenger_fio">Не заполнено обязательное поле \"ФИО в блоке Пассажиры\"</string>
+    <string name="text_error_phone_format_passenger">Необходимо ввести корректный номер телефона(+38XXXXXXXXXX) пассажира</string>
+    <string name="text_error_numb_passenger">Не заполнено обязательное поле \"Общее колличество пассажиров\"</string>
+    <string name="text_error_point_start">Не заполнено обязательное поле \"Пункт отправления\"</string>
+    <string name="text_error_point_stop">Не заполнено обязательное поле \"Пункт назначения\"</string>
+    <string name="text_error_point_address">Не заполнено обязательное поле \"Адресс промежуточного пункта\"</string>
+    <string name="text_error_time_start">Указанное время начала поездки меньше текущего. Заявка считается выполненной!</string>
+    <string name="text_error_time_point_numb">Укажите дату и время отправления в промежуточном пункте № %1$d больше, чем дату и время прибытия в промежуточный пункт.</string>
+    <string name="text_error_time_point">Укажите дату и время прибытия в промежуточный пункт больше, чем дата и время отправления</string>
+    <string name="text_error_time_finish">Укажите дату и время в поле \"Дата прибытия\" больше даты и времени в поле \"Дата отправления\"</string>
+    <string name="text_error_time_take_away_start">Укажите дату и время в поле \"Дата забрать в\" больше даты и времени в поле \"Дата отправления\"</string>
+    <string name="text_error_time_take_away_finish">Укажите дату и время в поле \"Дата забрать в\" меньше даты и времени в поле \"Дата прибытия\"</string>
+    <string name="text_error_time_take_away_point">Укажите дату и время в попоследнем промежуточном пункте больше даты и времени в предыдущем промежуточном пункте</string>
+    <string name="text_error_rating">Не заполнено обязательное поле \"Оценка\"</string>
+    <string name="text_error_comment_rating">Не заполнено обязательное поле \"Коментарий к оценке\"</string>
+    <string name="text_warning_date_start">Невыполненены требования по срокам подачи заявки (до 16:00 за один рабочий день до оказания транспортных услуг). Гарантировать предоставление машины диспетчеры не могут, в связи с возможностью отсутствия свободных машин на указанный период!</string>
+    <string name="text_driver">Водитель</string>
+    <string name="text_car">Автомобиль</string>
+    <string name="text_comment">Комментарий</string>
+    <string name="text_rating">Оценка качества работы водителя</string>
+    <string name="text_comment_rating">Комментарий к оценке</string>
+    <string name="text_select_rating">Выберите оценку</string>
+    <string name="text_date_point">Дата прибытия в промежуточный пункт</string>
+
+    <!--IT-сервисы-->
+    <string name="text_it_order_list">Заявка №</string>
+    <string name="text_info_user">Информация о пользователе</string>
+    <string name="text_name_affects">На кого влияет</string>
+    <string name="text_name_organization">Организация</string>
+    <string name="text_personnel_number">Табельный номер</string>
+    <string name="text_phone_number">Телефон</string>
+    <string name="text_name_address">Адрес размещения</string>
+    <string name="text_hint_address">Введите улицу</string>
+    <string name="text_name_room">Комната</string>
+    <string name="text_hint_room">№ комнаты</string>
+    <string name="text_info_order">Информация о заявке</string>
+    <string name="text_name_urgency">Срочность</string>
+    <string name="text_name_reference_type">Тип справки</string>
+    <string name="text_name_subject">Тема</string>
+    <string name="text_hint_subject">Введите \"Тему\" заявки</string>
+    <string name="text_name_description">Описание</string>
+    <string name="text_name_solution">Решение</string>
+    <string name="text_hint_description">Введите описание</string>
+    <string name="text_info_general">Общая информация</string>
+    <string name="text_number">Номер заявки</string>
+    <string name="text_it_status">Статус</string>
+    <string name="text_it_initiator">Инициатор</string>
+    <string name="text_date_start">Дата создания</string>
+    <string name="text_date_plan">Плановая дата завершения</string>
+    <string name="text_date_end">Фактическая дата завершения</string>
+    <string name="text_date_postponed">Дата, до которой отложено</string>
+    <string name="text_info_rating">Оценка качества выполнения заявки</string>
+    <string name="text_name_rate">Оценка</string>
+    <string name="text_name_comment_rating">Обоснование оценки</string>
+    <string name="text_error_itsm">Ошибка ITSM сервиса, попробуйте позже!</string>
+    <string name="text_error_address">Необходимо заполнить поле \"Адрес размещения\"</string>
+    <string name="text_error_subject">Необходимо заполнить поле \"Тема\"</string>
+    <string name="text_error_description">Необходимо заполнить поле \"Описание\"</string>
+    <string name="text_error_rate_0">Необходимо заполнить поле \"Оценка\"</string>
+    <string name="text_error_rate_1_2">Вы установили низкую оценку, необходимо указать причину в поле \"Обоснование оценки\"</string>
+    <string name="text_reason_return">Причина отклонения пользователем</string>
+    <string name="text_error_reason_return_no">Необходимо заполнить поле \"Причина отклонения пользователем\"</string>
+    <string name="text_confirm">Вы действительно желаете отозвать заявку?</string>
+    <string name="btn_it_cancel">Отозвать</string>
+    <string name="btn_it_rating">Оценить</string>
+    <string name="btn_it_return">Вернуть в работу</string>
+    <string name="btn_it_return_ok">Подтвердить возврат</string>
+    <string name="btn_it_reject_decision">Отклонить выполнение</string>
+
+    <!--Ошибки и валидация-->
+    <string name="date_validation_error">Период заказа "с" не может быть больше Периода заказа "по"</string>
+    <string name="description_empty_error">Необходимо заполнить поле «Описание»</string>
+    <string name="space_requirement_empty_error">Необходимо заполнить поле «Место требования»</string>
+
+
+    <!--IT-2ЛП-->
+    <string name="text_hint_filter_address">Фильтровать по адресу</string>
+    <string name="text_number2">№</string>
+    <string name="text_date_plan_sr">Плановое время завершения SR</string>
+    <string name="text_name_city">Город</string>
+    <string name="text_name_phone">Контактный номер</string>
+    <string name="text_name_email">Электронный адрес</string>
+    <string name="text_name_priority">Приоритет</string>
+    <string name="text_info_detail">Подробная информация</string>
+    <string name="text_name_service">Сервис</string>
+    <string name="text_name_turn">Услуга</string>
+
+    <string name="text_status_take_queue">Взять себе в очередь</string>
+    <string name="text_status_take_work">Взять в работу</string>
+    <string name="text_status_reject_incorrectly">Отклонить как неправильно классифицирован</string>
+    <string name="text_status_reject_return">Отклонить - вернуть на доработку(Заявку на услуги)</string>
+    <string name="text_status_reject">Отклонить</string>
+    <string name="text_status_wait">Отложить</string>
+    <string name="text_status_done">Выполнено</string>
+    <string name="text_status_in_work">В работе</string>
+
+    <string name="text_name_status_cause">Причина отклонения</string>
+    <string name="text_name_status_cause_wait">Причина откладывания</string>
+    <string name="text_name_status_note">Примечание</string>
+    <string name="text_hint_status_note">Введите примечание</string>
+    <string name="btn_name_status_ok">Подтвердить</string>
+
+    <string name="text_error_action">Выберите действие!</string>
+
+    <!--HR - отпуска-->
+    <string name="tab_title_limit">Лимиты\n отпусков</string>
+    <string name="tab_title_history">История\n заявлений</string>
+    <string name="tab_title_subordinate">Отпуска\n подчиненных</string>
+    <string name="text_title_create">Создание заявки</string>
+    <string name="text_name_location">Местоположение</string>
+    <string name="text_hint_location">Введите улицу</string>
+    <string name="text_error_location">нет в списке</string>
+    <string name="text_name_type_vacation">Вид отпуска</string>
+    <string name="text_name_balance_day">Остаток дней данного отпуска</string>
+    <string name="text_name_prepaid_day">из них авансовых </string>
+    <string name="text_name_date_start">Начало отпуска</string>
+    <string name="text_name_date_end">Окончание отпуска</string>
+    <string name="text_name_total_days">Итого календарных дней</string>
+    <string name="text_error_total_days">Диапазон отпуска не задан</string>
+    <string name="text_name_skip_chief">Пропустить согласование линейным руководителем</string>
+    <string name="text_name_comment">Комментарии</string>
+    <string name="text_btn_send">Отправить на согласование</string>
+    <string name="text_balance_days">Остаток дней</string>
+    <string name="text_prepayment_days">Взято авансом</string>
+    <string name="text_title_boss_deny">Укажите причину отклонения заявления</string>
+    <string name="btn_name_boss_deny">Подтвердить</string>
+    <string name="text_error_boss_deny">Необходимо заполнить поле \"Укажите причину отклонения заявления\"</string>
+    <string name="text_btn_boss_approve">Согласовать</string>
+    <string name="text_btn_boss_deny">Отклонить</string>
+
+    <!--QrResp-->
+    <string name="scan_bar_code">Scan a Bar Code</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <!--QrResp/-->
+
+    <!--Газета-->
+    <string name="text_newspaper_null">Свежый выпуск газеты еще не опубликован</string>
+    <!--Газета/-->
+
+    <!--Управление командировками-->
+
+    <string name="general_info">Загальна інформація</string>
+    <string name="final_destination">Пункт призначення</string>
+    <string name="tickets">Квитки</string>
+    <string name="hotel">Готель</string>
+    <string name="additional_services">Додаткові послуги</string>
+    <string name="approvers">Погоджуючі</string>
+    <string name="request_number">Номер заявки</string>
+    <string name="request_status">Статус</string>
+    <string name="create_date">Дата створення:</string>
+    <string name="employee">Працівник:</string>
+    <string name="business_trip_type">Тип відрядження</string>
+    <string name="date">Дата</string>
+    <string name="start_date">Дата початку</string>
+    <string name="end_data">Дата закінчення</string>
+    <string name="delay">Затримка</string>
+    <string name="delay_date">Дата затримки</string>
+    <string name="passport_data">Відомості про закордонний паспорт</string>
+    <string name="passport_number">Серія, номер</string>
+    <string name="passport_validity">Термін дії</string>
+    <string name="final_destination_text">Пункт призначення:</string>
+    <string name="hint_choose_town">Виберіть місто…</string>
+    <string name="hint_choose_organization">Виберіть компанію…</string>
+    <string name="company_name">Назва компанії:</string>
+    <string name="name_is_absent">Назва відсутня в переліку</string>
+    <string name="compensation">Компенсація</string>
+    <string name="date_of">Дата з</string>
+    <string name="date_to">Дата по</string>
+    <string name="indicate_company_name">Вкажіть назву компанії:</string>
+    <string name="business_trip_goal">Мета відрядження:</string>
+    <string name="button_delete">Видалити</string>
+    <string name="button_recall">Відкликати</string>
+    <string name="button_cancel">Відмінити</string>
+    <string name="button_save">Зберегти</string>
+    <string name="button_change">Змінити</string>
+    <string name="button_approving">Відправити</string>
+
+    <string name="ticket_type">Тип:</string>
+    <string name="departure_date">Дата відправлення</string>
+    <string name="time">Час</string>
+    <string name="from">Звідки:</string>
+    <string name="to">Куди:</string>
+    <string name="comments">Коментар</string>
+    <string name="add_return_trip">Додати зворотній рейс</string>
+    <string name="settlement">Населений пункт</string>
+    <string name="arrival_date">Дата заїзду</string>
+    <string name="date_of_departure">Дата виїзду</string>
+    <string name="early_arrival">Ранній заїзд</string>
+    <string name="late_departure">Пізній виїзд</string>
+    <string name="service">Послуга</string>
+    <string name="attention_text">Загальний термін відрядження необхідно вказати з урахуванням дороги, без урахування затримки у відрядженні з особистої ініціативи</string>
+    <string name="destination_attention_text">У разі відрядження у декілька міст потрібно додати інформацію по кожному місту окремо</string>
+
+<!--Validation-->
+
+    <!--Destination-->
+    <string name="empty_final_destination">Не вказаний Пункт призначення</string>
+    <string name="empty_start_date">Не вказана Дата початку</string>
+    <string name="empty_end_date">Не вказана Дата закінчення</string>
+    <string name="empty_company_name">Не вказана Назва команії</string>
+    <string name="start_date_after_end_date">Дата початку більша за Дату закінчення</string>
+    <!--Tickets-->
+    <string name="empty_departure_date">Не вказана Дата відправлення</string>
+    <string name="empty_destination_from">Не вказане місто "Звідки"</string>
+    <string name="empty_destination_to">Не вказане місто "Куди"</string>
+    <string name="empty_departure_return_date">Не вказана Дата відправлення зворотнього рейсу</string>
+    <!--Hotels-->
+    <string name="empty_destination">Не вказаний Населений пункт</string>
+    <string name="empty_arrival_date">Не вказана Дата заїзду</string>
+    <string name="empty_date_of_departure">Не вказана Дата виїзду</string>
+    <string name="arrival_date_after_departure_date">Дата заїзду більша за Дату виїзду</string>
+
+    <!--ошибки при сохранении командировки-->
+    <string name="empty_dest">Потрібно додати хоча б один пункт призначення!</string>
+    <string name="empty_delay_date">Не вказана Дата затримки!</string>
+    <string name="wrong_destination_date">Не вірно вказані дати одного з Пунктів призначення</string>
+    <string name="wrong_ticket_date">Не вірно вказані дати одного з Квитків</string>
+    <string name="wrong_hotel_date">Не вірно вказані дати одного з Готелю</string>
+    <string name="wrong_dates">Поточна дата більша за дату закінчення відряження. Змінити не можливо!</string>
+    <string name="text_cancel_bt">Ви дійсно бажаєте відкликати заявку на відрядження?</string>
+
+    <string name="text_destination_delete">Ви дійсно бажаєте видалити цей Пункт призначення?</string>
+    <string name="text_ticket_delete">Ви дійсно бажаєте видалити цей Квиток?</string>
+    <string name="text_hotel_delete">Ви дійсно бажаєте видалити цей Готель?</string>
+    <string name="text_service_delete">Ви дійсно бажаєте видалити цю Додаткову послугу?</string>
+    <!--Управление командировками/-->
+
+</resources>

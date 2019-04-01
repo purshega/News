@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reference_attribute_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name_reference_type"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_reference_type"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:dropDownVerticalOffset="28dp"
+        android:spinnerMode="dialog"
+        android:paddingEnd="7dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reference_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reference_attribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

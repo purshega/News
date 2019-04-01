@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.GalleryActivity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/pv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <!--<com.otaliastudios.zoom.ZoomImageView-->
+        <!--android:id="@+id/pv_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="vertical|horizontal"-->
+        <!--app:overScrollHorizontal="true"-->
+        <!--app:overScrollVertical="true"-->
+        <!--app:overPinchable="true"-->
+        <!--app:horizontalPanEnabled="true"-->
+        <!--app:verticalPanEnabled="true"-->
+        <!--app:zoomEnabled="true"-->
+        <!--app:minZoom="1.0"-->
+        <!--app:minZoomType="zoom"-->
+        <!--app:maxZoom="4.0"-->
+        <!--app:maxZoomType="zoom"/>-->
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_file_download"
+        android:visibility="invisible"/>
+
+</android.support.constraint.ConstraintLayout>

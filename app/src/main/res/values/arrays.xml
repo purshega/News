@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Днипро</item>
+        <item>Доброполье</item>
+        <item>Запорожье</item>
+        <item>Киев</item>
+        <item>Курахово</item>
+        <item>Львов</item>
+        <item>Мелитополь</item>
+        <item>Павлоград</item>
+    </string-array>
+
+    <string-array name="direction">
+        <item>По городу</item>
+        <item>В рамках области</item>
+        <item>За пределы области (по Украине)</item>
+        <item>За пределы Украины</item>
+    </string-array>
+
+    <string-array name="car_passenger">
+        <item>Сотрудник</item>
+        <item>Гость</item>
+    </string-array>
+
+    <string-array name="minute">
+        <item>00 мин</item>
+        <item>05 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+        <item>20 мин</item>
+        <item>25 мин</item>
+        <item>30 мин</item>
+    </string-array>
+
+    <string-array name="rating_car">
+        <item>4 - качество обслуживания отличное (очень доволен)</item>
+        <item>3 - качество обслуживания хорошее (доволен)</item>
+        <item>2 - качество обслуживания удовлетворительное (в целом доволен, но есть небольшие замечания)</item>
+        <item>1 - качество обслуживания плохое (недоволен, серьезные притензии)</item>
+    </string-array>
+
+    <string-array name="urgency">
+        <item>1 - Срочный</item>
+        <item>2 - Высокий</item>
+        <item>3 - Средний</item>
+        <item>4 - Низкий</item>
+    </string-array>
+
+    <string-array name="rating_it">
+        <item> </item>
+        <item>4 - Отлично, очень доволен</item>
+        <item>3 - Хорошо, доволен</item>
+        <item>2 - Есть небольшие замечания, в целом удовлетворен</item>
+        <item>1 - Есть серьезные замечания, неудовлетворен</item>
+    </string-array>
+
+    <string-array name="cause_revision">
+        <item></item>
+        <item>Выбран некорректный модуль по причине того, что пользователь неверно указал модуль в тексте заявке</item>
+        <item>Зарегистрировать ЗИ вместо РЗ (при условии, что это явно не указано в тексте)</item>
+        <item>Необходимо зарегистрировать заявку на обеспечение вместо РЗ</item>
+        <item>Перепроверить или добавить отсутствующие контактные данные &lt;указать какие></item>
+        <item>Предоставить информацию по опроснику &lt;указать какую></item>
+        <item>Предоставить отсутствующие необходимые согласования &lt;указать какие></item>
+        <item>Требуется вложить отсутствующую согласованную форму</item>
+        <item>Требуется выполнить самостоятельно согласно опросника/базы знаний &lt;указать что></item>
+        <item>Требуется разбить на несколько заявок</item>
+        <item>Указать корректного инициатора/на кого влияет</item>
+    </string-array>
+    <string-array name="cause_revision_request">
+        <item></item>
+        <item>retmod</item>
+        <item>retcjange</item>
+        <item>retmr</item>
+        <item>retdata</item>
+        <item>retinfo</item>
+        <item>retappr</item>
+        <item>retform</item>
+        <item>retquest</item>
+        <item>retsplit</item>
+        <item>retinit</item>
+    </string-array>
+
+    <string-array name="cause_not_properly_qualified_view">
+        <item></item>
+        <item>Заявка передана внешнему контрагенту</item>
+        <item>Оборудование/материал передано на ремонт в Сервисный центр</item>
+        <item>Обслуживание по-копийной печатной техники</item>
+        <item>Ограничение оплат внешним контрагентам</item>
+        <item>Ожидается поставка запасных частей/материалов ДТЭК СЕРВИС</item>
+        <item>Ожидание доставки оборудования заказчиком</item>
+        <item>Ожидание предоставление транспорта заказчиком</item>
+        <item>Пользователь отсутствует на месте</item>
+        <item>Пользователь перенес время выполнения</item>
+        <item>Превышенние финансового лимита</item>
+    </string-array>
+    <string-array name="cause_not_properly_qualified_request">
+        <item></item>
+        <item>kontragent</item>
+        <item>repair</item>
+        <item>confirmation</item>
+        <item>oplata</item>
+        <item>delivery</item>
+        <item>clarify</item>
+        <item>auto</item>
+        <item>absence</item>
+        <item>transfer</item>
+        <item>limit</item>
+    </string-array>
+
+    <string-array name="delay">
+        <item>Ні</item>
+        <item>Так</item>
+    </string-array>
+
+    <string-array name="tickets_type">
+        <item>ЖД</item>
+        <item>Авіа</item>
+        <item>Автобус</item>
+    </string-array>
+
+</resources>

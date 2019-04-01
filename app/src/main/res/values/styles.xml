@@ -1,0 +1,236 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorBlack</item>
+    </style>
+
+    <style name="NavigationDrawerStyle" parent="AppTheme">
+        <item name="android:textSize">16sp</item><!-- размер текста-->
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="itemTextColor">@color/colorWhite</item>
+        <item name="itemIconTint">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:listDivider">@color/colorPrimaryDark</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+
+        <!--<item name="android:listPreferredItemHeightSmall">40dp</item>&lt;!&ndash; высота item&ndash;&gt;-->
+        <!--<item name="listPreferredItemPaddingLeft">42dp</item> &lt;!&ndash; отступ слева&ndash;&gt;-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- цвет кнопок (дровера/назад) -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTabLayoutText" parent="TextAppearance.Design.Tab">
+        <!--<style name="MyTabLayoutText" parent="@style/TextAppearance.Widget.TabWidget">-->
+        <!--<style name="MyTabLayoutText" >-->
+        <!--<item name="android:textSize">16sp</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/border_edittext</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/border_spinner</item>
+        <item name="android:dropDownVerticalOffset">28dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <!--<item name="android:paddingLeft">1dp</item>-->
+        <!--<item name="android:paddingTop">4dp</item>-->
+        <!--<item name="android:paddingBottom">4dp</item>-->
+        <!--<item name="android:popupBackground">#FFFFFF</item>-->
+    </style>
+
+    <style name="View_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="background">@color/color_background_white</item>
+    </style>
+
+    <style name="TextView_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_news_detail_text</item>
+    </style>
+
+    <style name="TextView_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_news_detail_text</item>
+    </style>
+
+    <style name="TextView_3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_news_detail_text</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/background</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="MainMenuItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MainMenuItemText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fontFamily">@font/trebuchet_ms_bold</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="MenuImage">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="MenuItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="SeparatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name = "FormLayout">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">wrap_content</item>
+        <item name =  "android:layout_marginTop">16dp</item>
+        <item name =  "android:layout_marginBottom">5dp</item>
+        <item name =  "android:background">@color/colorPrimaryDark</item>
+        <item name =  "android:orientation">vertical</item>
+        <item name =  "android:padding">3dp</item>
+    </style>
+
+    <style name = "FormHeaderText">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">wrap_content</item>
+        <item name =  "android:paddingStart">10dp</item>
+        <item name =  "android:textColor">@color/color_news_detail_text</item>
+        <item name =  "android:textSize">20sp</item>
+    </style>
+
+    <style name = "ContentFormLayout">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">wrap_content</item>
+        <item name =  "android:background">@color/colorPrimary</item>
+        <item name =  "android:paddingBottom">2dp</item>
+        <item name =  "android:paddingTop">2dp</item>
+    </style>
+    
+    <style name="LayoutContentInside_1">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">wrap_content</item>
+        <item name =  "android:background">@color/colorPrimary</item>
+        <item name =  "android:gravity">center_vertical</item>
+        <item name =  "android:paddingLeft">10dp</item>
+        <item name =  "android:paddingRight">10dp</item>
+        <item name =  "android:paddingTop">10dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name =  "android:layout_width">wrap_content</item>
+        <item name =  "android:layout_height">32dp</item>
+        <item name =  "android:background">@drawable/button_style</item>
+        <item name =  "android:textAllCaps">false</item>
+        <item name =  "android:paddingStart">@dimen/button_padding</item>
+        <item name =  "android:paddingEnd">@dimen/button_padding</item>
+    </style>
+    
+    <style name="AttentionIV">
+        <item name =  "android:layout_width">@dimen/iv_size</item>
+        <item name =  "android:layout_height">@dimen/iv_size</item>
+    </style>
+
+    <style name="BusinessTripsItemIV">
+        <item name =  "android:layout_width">@dimen/iv_size</item>
+        <item name =  "android:layout_height">@dimen/iv_size</item>
+    </style>
+
+    <style name="BusinessTripsItem_1">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">wrap_content</item>
+        <item name =  "android:layout_marginTop">15dp</item>
+        <item name =  "android:padding">3dp</item>
+        <item name =  "android:background">@color/colorPrimaryDark</item>
+        <item name =  "android:orientation">vertical</item>
+    </style>
+
+    <style name="BusinessTripsItem_2">
+        <item name =  "android:layout_width">match_parent</item>
+        <item name =  "android:layout_height">35dp</item>
+    </style>
+
+    <style name="FrameProgressBar">
+        <item name =  "android:layout_width">20dp</item>
+        <item name =  "android:layout_height">20dp</item>
+        <item name =  "android:layout_gravity">center|end</item>
+        <item name =  "android:layout_marginEnd">5dp</item>
+    </style>
+
+
+</resources>
+

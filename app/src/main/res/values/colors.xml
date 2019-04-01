@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fbfcfe</color>
+    <color name="colorPrimaryDark">#FFE300</color>
+    <color name="colorAccent">#85868A</color>
+
+    <color name="color_background_white">#E8E9E8</color>
+    <color name="color_toolbar_text">#00011C</color>
+    <color name="color_tab_background">#85868A</color>
+    <color name="color_tab_background_select">#FFE300</color>
+    <color name="color_tab_text">#E8E9E8</color>
+    <color name="color_news_detail_title">#85868A</color>
+    <color name="color_news_detail_text">#00071F</color>
+    <color name="color_news_detail_background">#FFFFFF</color>
+    <color name="color_text_date">#AAADC4</color>
+    <color name="color_link_text">#1f2a7c</color>
+
+    <color name="color_status_orange">#FFCA28</color>
+    <color name="color_status_green">#81C784</color>
+    <color name="color_status_blue">#1976D2</color>
+    <color name="color_status_red">#f44336</color>
+    <color name="color_status_pink">#ffcdd2</color>
+    <color name="color_status_purple">#8E24AA</color>
+    <color name="color_status_black">#00011C</color>
+
+    <color name="colorRed">#ff010a</color>
+    <color name="colorBlack">#000007</color>
+    <color name="colorWhiteGrey">#f1f1f1</color>
+    <color name="colorGreyTransparent">#d585868a</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorButtonPress">#7f7f7f</color>
+    <color name="toolbar_grey">#4D4D4D</color>
+    <color name="background">#EFEFEF</color>
+    <color name="placeholder_grey_20">#33AAADC4</color>
+
+    <color name="color_push_icon">#ffd200</color>
+
+    <color name="color_item">#F2F2F2</color>
+
+
+
+
+</resources>

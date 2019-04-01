@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/pdf_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        />
+
+    <!--<com.otaliastudios.zoom.ZoomImageView-->
+        <!--android:id="@+id/pdf_page"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="vertical|horizontal"-->
+        <!--app:overScrollHorizontal="true"-->
+        <!--app:overScrollVertical="true"-->
+        <!--app:overPinchable="true"-->
+        <!--app:horizontalPanEnabled="true"-->
+        <!--app:verticalPanEnabled="true"-->
+        <!--app:zoomEnabled="true"-->
+        <!--app:minZoom="1.0"-->
+        <!--app:minZoomType="zoom"-->
+        <!--app:maxZoom="7.0"-->
+        <!--app:maxZoomType="zoom"/>-->
+
+</android.support.constraint.ConstraintLayout>

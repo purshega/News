@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FormLayout"
+    >
+
+    <TextView
+        android:id="@+id/form_header_text"
+        style="@style/FormHeaderText"
+        android:text="@string/general_info" />
+
+    <LinearLayout
+        style="@style/ContentFormLayout"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_business_trips_status" />
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView_1"
+                android:text="@string/employee" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_employee"
+                    style="@style/MyEditText"
+                    android:paddingEnd="28dp"
+                    android:paddingStart="7dp"
+                    android:imeOptions="actionNext"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textAutoCorrect|textAutoComplete|textCapWords|textPersonName|textMultiLine" />
+
+                <ProgressBar
+                    android:id="@+id/pb_employee_search"
+                    style="@style/FrameProgressBar"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_employee_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_close_black_24dp"
+                    tools:ignore="VectorDrawableCompat"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/employee" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1">
+
+                <EditText
+                    style="@style/MyEditText"
+                    android:paddingEnd="28dp"
+                    android:paddingStart="7dp"
+                    android:inputType="textMultiLine"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:imeOptions="actionNext"
+                    tools:text="Иванов Иван Иванович"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_close_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/business_trip_type" />
+
+            <Spinner
+                android:id="@+id/spinner_business_trip_type"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                style="@style/spinner_style"
+                android:layout_weight="1"
+                android:paddingEnd="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/start_date" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_date_start"
+                    style="@style/MyEditText"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_hint_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_date"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/end_data" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_date_end"
+                    style="@style/MyEditText"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_hint_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_date"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal">
+
+            <ImageView
+              style="@style/AttentionIV"
+                android:background="@drawable/circle_48"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                style="@style/TextView_2"
+                android:text="@string/attention_text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/delay" />
+
+            <Spinner
+                android:id="@+id/spinner_delay"
+                style="@style/spinner_style"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delay_date_layout"
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/delay_date" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_date_delay"
+                    style="@style/MyEditText"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_hint_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_date"
+                    tools:ignore="VectorDrawableCompat" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passport_data_layout"
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_1"
+                android:text="@string/passport_data" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passport_number_layout"
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/passport_number" />
+
+                <EditText
+                    android:id="@+id/et_passport_number"
+                    android:layout_weight="1"
+                    style="@style/MyEditText"
+                    android:imeOptions="actionNext"
+                     />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passport_validity_layout"
+            style="@style/LayoutContentInside_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_1"
+                android:layout_weight="1.4"
+                android:text="@string/passport_validity" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/frame_margin_end"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_passport_validity"
+                    style="@style/MyEditText"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_hint_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    app:srcCompat="@drawable/ic_date"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+        <include layout="@layout/item_general_info_business_trips" />
+
+        <LinearLayout style="@style/BusinessTripsItem_1">
+
+            <android.support.constraint.ConstraintLayout style="@style/BusinessTripsItem_2">
+
+                <TextView
+                    android:id="@+id/tv_final_destination"
+                    style="@style/TextView_3"
+                    android:paddingStart="10dp"
+                    android:text="@string/final_destination"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_final_destination_count"
+                    style="@style/TextView_3"
+                    android:layout_width="wrap_content"
+                    android:text="(0)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_final_destination"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/final_destination_add_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/final_destinations_list_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageButton
+                    android:id="@+id/final_destinations_list_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="@dimen/icon_margin_end"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/final_destination_list"
+                style="@style/ContentFormLayout"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_final_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/BusinessTripsItem_1">
+
+            <android.support.constraint.ConstraintLayout style="@style/BusinessTripsItem_2">
+
+                <TextView
+                    android:id="@+id/tv_tickets"
+                    style="@style/TextView_3"
+                    android:paddingStart="10dp"
+                    android:text="@string/tickets"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_tickets_count"
+                    style="@style/TextView_3"
+                    android:layout_width="wrap_content"
+                    android:text="(0)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_tickets"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/ticket_add_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tickets_list_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/tickets_list_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="@dimen/icon_margin_end"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/tickets_list"
+                style="@style/ContentFormLayout"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_tickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/BusinessTripsItem_1">
+
+            <android.support.constraint.ConstraintLayout style="@style/BusinessTripsItem_2">
+
+                <TextView
+                    android:id="@+id/tv_hotel"
+                    style="@style/TextView_3"
+                    android:paddingStart="10dp"
+                    android:text="@string/hotel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_hotel_count"
+                    style="@style/TextView_3"
+                    android:layout_width="wrap_content"
+                    android:text="(0)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_hotel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/hotel_add_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/hotels_list_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/hotels_list_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="@dimen/icon_margin_end"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/hotels_list"
+                style="@style/ContentFormLayout"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_hotels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/BusinessTripsItem_1">
+
+            <android.support.constraint.ConstraintLayout style="@style/BusinessTripsItem_2">
+
+                <TextView
+                    android:id="@+id/tv_additional_services"
+                    style="@style/TextView_3"
+                    android:paddingStart="10dp"
+                    android:text="@string/additional_services"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_additional_services_count"
+                    style="@style/TextView_3"
+                    android:layout_width="wrap_content"
+                    android:text="(0)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_additional_services"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/additional_service_add_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/additional_services_list_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/additional_services_list_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="@dimen/icon_margin_end"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/additional_services_list"
+                style="@style/ContentFormLayout"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_additional_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/approver_layout"
+            style="@style/BusinessTripsItem_1"
+            android:visibility="gone">
+
+            <android.support.constraint.ConstraintLayout style="@style/BusinessTripsItem_2">
+
+                <TextView
+                    android:id="@+id/tv_approver"
+                    style="@style/TextView_3"
+                    android:paddingStart="10dp"
+                    android:text="@string/approvers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <ImageButton
+                    android:id="@+id/approvers_list_btn"
+                    style="@style/BusinessTripsItemIV"
+                    android:layout_marginEnd="@dimen/icon_margin_end"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/approvers_list"
+                style="@style/ContentFormLayout"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_approvers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/item_buttons" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

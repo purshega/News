@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="84dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/news_item"
+                style="@style/MainMenuItemLayout">
+
+                <TextView
+                    style="@style/MainMenuItemText"
+                    android:text="НОВОСТИ" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/nav_news_dtek"
+                    style="@style/MainMenuItemLayout"
+                    >
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_news_dtek" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_news_dtek" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_not_miss"
+                    style="@style/MainMenuItemLayout">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_not_miss" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_not_miss" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_news_company"
+                    style="@style/MainMenuItemLayout">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_news_company" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_news_company" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/SeparatorLayout"></LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/service_item"
+                style="@style/MainMenuItemLayout"
+                android:visibility="gone">
+                <TextView
+                    style="@style/MainMenuItemText"
+                    android:text="СЕРВИСЫ" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/service_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/nav_car"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_car" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_car" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_it_service"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_it" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_it_service" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_room_service"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_room" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_room_service" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_hr_vacation"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_vacation" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_hr_vacation" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_qr"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_qr_code" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_qr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_business_trip"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_business_trip" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_business_trip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_references"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_reference" />
+
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_references" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/service_separator_layout"
+                style="@style/SeparatorLayout"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/media_item"
+                style="@style/MainMenuItemLayout">
+                <TextView
+                    style="@style/MainMenuItemText"
+                    android:text="МЕДИА" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/media_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/nav_photo"
+                    style="@style/MainMenuItemLayout">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_gallery" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_newspaper"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_newspaper" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_newspaper" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_video"
+                    style="@style/MainMenuItemLayout"
+                    android:visibility="gone">
+                    <ImageView
+                        style="@style/MenuImage"
+                        android:background="@drawable/ic_nav_gallery" />
+                    <TextView
+                        style="@style/MenuItem"
+                        android:text="@string/title_video" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

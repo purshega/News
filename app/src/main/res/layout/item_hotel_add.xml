@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+    <LinearLayout style="@style/FormLayout">
+
+        <TextView
+            android:id="@+id/form_header_text"
+            style="@style/FormHeaderText"
+            android:text="@string/hotel" />
+
+        <LinearLayout
+            style="@style/ContentFormLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:text="@string/settlement" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ac_tv_destination"
+                        style="@style/MyEditText"
+                        android:hint="@string/hint_choose_town"
+                        android:paddingEnd="28dp"
+                        android:imeOptions="actionNext"
+                        android:ems="10"
+                        android:inputType="textAutoCorrect|textAutoComplete|textCapWords|textPersonName|textMultiLine" />
+
+                    <ImageView
+                        android:id="@+id/iv_destination_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/spinner_arrow"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_destination_search"
+                        style="@style/FrameProgressBar"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/arrival_date" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_arrival_date"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="date" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_date"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_early_arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/early_arrival" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/early_arrival_layout"
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/time" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_early_arrival_time"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_time_ukr"
+                        android:imeOptions="actionNext"
+                        android:inputType="time" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_timer"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/date_of_departure" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_date_of_departure"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="date" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_date"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_late_departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/late_departure" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/late_departure_layout"
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/time" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_late_departure_time"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_time_ukr"
+                        android:imeOptions="actionNext"
+                        android:inputType="time" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_timer"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/comments" />
+
+                <EditText
+                    android:id="@+id/et_comments"
+                    style="@style/MyEditText"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine|textAutoCorrect|textAutoComplete|textCapSentences" />
+            </LinearLayout>
+
+            <include layout="@layout/item_buttons" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

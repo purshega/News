@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout style="@style/FormLayout">
+
+        <TextView
+            android:id="@+id/form_header_text"
+            style="@style/FormHeaderText"
+            android:text="@string/final_destination" />
+
+        <LinearLayout
+            style="@style/ContentFormLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/final_destination_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ac_tv_final_destination"
+                        style="@style/MyEditText"
+                        android:hint="@string/hint_choose_town"
+                        android:paddingEnd="28dp"
+                        android:imeOptions="actionNext"
+                        android:ems="10"
+                        android:inputType="textAutoCorrect|textAutoComplete|textCapWords|textPersonName|textMultiLine" />
+
+                    <ImageView
+                        android:id="@+id/iv_destinations_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/spinner_arrow"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_destinations_search"
+                        style="@style/FrameProgressBar"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/start_date" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_date_start"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="date" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_date"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/end_data" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_date_end"
+                        style="@style/MyEditText"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_hint_date"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/ic_date"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1"
+                    android:text="@string/company_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ac_tv_organizations"
+                        style="@style/MyEditText"
+                        android:hint="@string/hint_choose_organization"
+                        android:paddingEnd="28dp"
+                        android:imeOptions="actionNext"
+                        android:ems="10"
+                        android:inputType="textAutoCorrect|textAutoComplete|textCapWords|textPersonName|textMultiLine" />
+
+                    <ImageView
+                        android:id="@+id/iv_organizations_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/spinner_arrow"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_organizations_search"
+                        style="@style/FrameProgressBar"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4" />
+
+                <CheckBox
+                    android:id="@+id/cb_name_is_absent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/name_is_absent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/absent_company_name_layout"
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/indicate_company_name" />
+
+                <EditText
+                    android:id="@+id/et_absent_company_name"
+                    style="@style/MyEditText"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:inputType="textMultiLine|textAutoCorrect|textAutoComplete|textCapSentences" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal"
+                android:layout_marginEnd="@dimen/frame_margin_end">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/business_trip_goal" />
+
+                <Spinner
+                    android:id="@+id/business_trip_goal"
+                    style="@style/spinner_style"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:paddingEnd="7dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cb_compensation_layout"
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4" />
+
+                <CheckBox
+                    android:id="@+id/cb_compensation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/compensation"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/compensation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    style="@style/LayoutContentInside_1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView_1"
+                        android:layout_weight="1.4"
+                        android:text="@string/date_of" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_compensation_start_date"
+                            style="@style/MyEditText"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/text_hint_date"
+                            android:imeOptions="actionNext"
+                            android:inputType="date" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            app:srcCompat="@drawable/ic_date"
+                            tools:ignore="VectorDrawableCompat" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutContentInside_1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView_1"
+                        android:layout_weight="1.4"
+                        android:text="@string/date_to" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_compensation_end_date"
+                            style="@style/MyEditText"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/text_hint_date"
+                            android:imeOptions="actionNext"
+                            android:inputType="date" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            app:srcCompat="@drawable/ic_date"
+                            tools:ignore="VectorDrawableCompat" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/AttentionIV"
+                    android:background="@drawable/circle_48"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <TextView
+                    style="@style/TextView_2"
+                    android:text="@string/destination_attention_text" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_buttons" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

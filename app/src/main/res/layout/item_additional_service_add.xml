@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout style="@style/FormLayout">
+
+        <TextView
+            android:id="@+id/form_header_text"
+            style="@style/FormHeaderText"
+            android:text="@string/additional_services" />
+
+        <LinearLayout
+            style="@style/ContentFormLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/service" />
+
+                <Spinner
+                    android:id="@+id/spinner_services"
+                    style="@style/spinner_style"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LayoutContentInside_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_1"
+                    android:layout_weight="1.4"
+                    android:text="@string/comments" />
+
+                <EditText
+                    android:id="@+id/et_comments"
+                    style="@style/MyEditText"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/frame_margin_end"
+                    android:inputType="textMultiLine|textAutoCorrect|textAutoComplete|textCapSentences" />
+            </LinearLayout>
+
+            <include layout="@layout/item_buttons" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

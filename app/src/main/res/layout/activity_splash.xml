@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".ui.activity.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="54dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_1"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_2"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="54dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_3"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="82dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_4"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_5"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="132dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_page_icon_6"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="262dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:alpha="0.2"
+            android:src="@drawable/start_logo"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorGreyTransparent"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="v1.0.0 \n © DTEK" />
+
+</FrameLayout>
